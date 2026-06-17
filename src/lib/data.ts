@@ -6,7 +6,7 @@ export const site = {
   email: "haar.richard@gmail.com",
   social: {
     github: "https://github.com/itsrichardhaar",
-    linkedin: "https://www.linkedin.com/in/richard-haar",
+    linkedin: "https://www.linkedin.com/in/richard-v-haar",
   },
   tagline:
     "I ship AI and automation systems end-to-end — from architecture through customer deployment.",
