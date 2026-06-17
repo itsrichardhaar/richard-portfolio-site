@@ -283,7 +283,7 @@ export type LogEntry = {
 
 export const projectLog: LogEntry[] = [
   {
-    year: "2025",
+    year: "2026",
     title: "Portfolio v2",
     type: "Personal site",
     stack: ["Next.js", "GSAP", "TypeScript"],
@@ -328,6 +328,15 @@ export const projectLog: LogEntry[] = [
     href: "https://cvcc.edu/programs-of-study/",
   },
   {
+    year: "2026",
+    title: "Robert High Development",
+    type: "Industrial site",
+    stack: ["WordPress", "PHP", "JavaScript"],
+    status: "Shipped",
+    color: "var(--clip-red)",
+    href: "https://roberthighdevelopment.com",
+  },
+  {
     year: "2025",
     title: "BuiltRite Storage Systems",
     type: "Industrial site",
@@ -337,7 +346,7 @@ export const projectLog: LogEntry[] = [
     href: "https://builtritestoragesystems.com",
   },
   {
-    year: "2024",
+    year: "2026",
     title: "Internal RAG / Semantic Search",
     type: "Retrieval system",
     stack: ["Python", "Qdrant", "LLM APIs", "Vector embeddings"],
@@ -345,7 +354,7 @@ export const projectLog: LogEntry[] = [
     color: "var(--clip-cyan)",
   },
   {
-    year: "2024",
+    year: "2026",
     title: "AI Workflow Automation",
     type: "Process automation",
     stack: ["LLM APIs", "Node.js", "Workflow design"],
@@ -353,7 +362,7 @@ export const projectLog: LogEntry[] = [
     color: "var(--clip-cyan)",
   },
   {
-    year: "2024",
+    year: "2026",
     title: "Springer OS",
     type: "Operations platform",
     stack: ["Next.js", "Express", "Prisma", "AWS"],
@@ -362,7 +371,7 @@ export const projectLog: LogEntry[] = [
     caseStudy: "springer-os",
   },
   {
-    year: "2024",
+    year: "2026",
     title: "Martin Community College",
     type: "Headless CMS platform",
     stack: ["Next.js", "Node.js", "PostgreSQL"],
