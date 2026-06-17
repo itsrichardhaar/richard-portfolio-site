@@ -51,7 +51,7 @@ export function LogTable() {
         <p className="log-fade mt-5 max-w-xl text-base leading-relaxed text-muted">
           A running log of shipped client work, internal platforms, and
           experiments — newest first. Case studies where they exist, links where
-          they're public.
+          they&apos;re public.
         </p>
 
         {/* Table */}

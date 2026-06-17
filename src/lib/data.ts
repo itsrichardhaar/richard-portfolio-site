@@ -593,7 +593,7 @@ export const experience: Job[] = [
 export const education = {
   school: "East Carolina University",
   degree: "B.S. Economics, Minor in History",
-  year: "2025",
+  year: "2017",
 };
 
 export const certifications = [

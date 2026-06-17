@@ -22,6 +22,7 @@ export function Nav() {
   const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
 
+  // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time client mount gate to avoid hydration mismatch on the theme-dependent icon
   useEffect(() => setMounted(true), []);
 
   useEffect(() => {

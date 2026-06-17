@@ -27,6 +27,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
   // sync React state to whatever it decided.
   useEffect(() => {
     if (typeof window === "undefined") return;
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- bridging pre-paint DOM state into React on mount
     setTheme(document.documentElement.classList.contains("dark") ? "dark" : "light");
     mounted.current = true;
   }, []);
