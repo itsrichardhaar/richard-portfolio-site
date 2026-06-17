@@ -28,6 +28,7 @@
   --raised: #e4e4e1;
   --border: #aaaaa5;
   --accent: #1f5be0;
+  --accent-strong: #1e40af;
   --accent-soft: #1f5be01f;
 
   --clip-blue: #2f6fed;
@@ -48,6 +49,7 @@
   --raised: #262626;
   --border: #34342f;
   --accent: #7aa7ff;
+  --accent-strong: #1e40af;
   --accent-soft: #7aa7ff24;
 
   --clip-blue: #5d8dfa;
@@ -145,7 +147,7 @@ html.lenis body {
 
 .btn-primary {
   background-color: var(--foreground);
-  background-image: linear-gradient(to right, var(--accent), var(--accent));
+  background-image: linear-gradient(to right, var(--accent-strong), var(--accent-strong));
   background-size: 0% 100%;
   background-position: 0 0;
   background-repeat: no-repeat;
