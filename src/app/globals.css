@@ -147,7 +147,11 @@ html.lenis body {
 
 .btn-primary {
   background-color: var(--foreground);
-  background-image: linear-gradient(to right, var(--accent-strong), var(--accent-strong));
+  background-image: linear-gradient(
+    to right,
+    color-mix(in oklab, var(--clip-cyan) 75%, transparent),
+    color-mix(in oklab, var(--clip-cyan) 75%, transparent)
+  );
   background-size: 0% 100%;
   background-position: 0 0;
   background-repeat: no-repeat;
