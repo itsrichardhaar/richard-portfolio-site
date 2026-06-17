@@ -98,6 +98,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
       if (hash) {
         const el = document.querySelector<HTMLElement>(hash);
         if (el && lenis) lenis.scrollTo(el, { offset: -64, immediate: true });
+      } else if (lenis) {
+        lenis.scrollTo(0, { immediate: true, force: true });
       }
     });
 
