@@ -1,7 +1,7 @@
 export const site = {
   name: "Richard Haar",
   role: "Full-Stack Engineer",
-  focus: "AI Automation & Customer Deployment",
+  focus: "AI Solutions Engineer",
   location: "Raleigh, NC",
   email: "haar.richard@gmail.com",
   social: {
@@ -110,7 +110,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "martin-cc",
     title: "Martin Community College",
     client: "Martin Community College",
-    year: "2024",
+    year: "2026",
     eyebrow: "Headless CMS · Higher Ed Tech",
     headline: "One platform. Every pathway.",
     subhead:
@@ -153,7 +153,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "springer-os",
     title: "Springer OS",
     client: "Springer Studios",
-    year: "2024",
+    year: "2026",
     eyebrow: "Internal Platform · Operations",
     headline: "The studio, running on its own software.",
     subhead:
