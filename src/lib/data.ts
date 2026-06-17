@@ -108,10 +108,6 @@ export const caseStudies: CaseStudy[] = [
     stack: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "REST API"],
     color: "var(--clip-blue)",
     liveUrl: "https://martincc.edu/",
-    heroMedia: {
-      src: "/case-studies/martin-cc/mcc-hero.png",
-      alt: "Martin Community College homepage hero",
-    },
     highlights: [
       { value: "5+", label: "Third-party tools replaced by one platform" },
       { value: "1:1", label: "Direct collaboration with college stakeholders" },
