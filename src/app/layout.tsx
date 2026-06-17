@@ -21,6 +21,14 @@ export const metadata: Metadata = {
   description:
     "Full-stack engineer shipping AI and automation systems end-to-end — RAG and retrieval systems, LLM workflow automation, and production web platforms.",
   metadataBase: new URL("https://www.richardhaar.com"),
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any", type: "image/x-icon" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/favicon.ico",
+  },
   openGraph: {
     title: "Richard Haar — Full-Stack Engineer",
     description:
