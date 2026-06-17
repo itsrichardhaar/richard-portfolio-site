@@ -2,22 +2,42 @@
 
 import { useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import type { CaseStudy } from "@/lib/data";
+import type { CaseMedia, CaseStudy } from "@/lib/data";
 import { SplitWords } from "./Reveal";
 import { revealOnce } from "@/lib/reveal";
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 
-function MediaPlaceholder({
+function MediaSlot({
   color,
   label,
+  image,
   ratio = "aspect-[16/9]",
+  sizes,
 }: {
   color: string;
   label: string;
+  image?: CaseMedia;
   ratio?: string;
+  sizes?: string;
 }) {
+  if (image) {
+    return (
+      <div className={`panel relative ${ratio} w-full overflow-hidden`}>
+        <Image
+          src={image.src}
+          alt={image.alt}
+          fill
+          sizes={sizes ?? "(min-width: 1280px) 1152px, 100vw"}
+          className="object-cover"
+          style={image.position ? { objectPosition: image.position } : undefined}
+        />
+      </div>
+    );
+  }
+
   return (
     <div
       className={`panel relative ${ratio} w-full overflow-hidden`}
@@ -121,7 +141,12 @@ export function CaseStudyView({
 
         {/* Hero media */}
         <div className="cs-reveal mt-16 md:mt-20">
-          <MediaPlaceholder color={cs.color} label={cs.title} />
+          <MediaSlot
+            color={cs.color}
+            label={cs.title}
+            image={cs.heroMedia}
+            sizes="(min-width: 1280px) 1152px, 100vw"
+          />
         </div>
 
         {/* Highlights band */}
@@ -164,10 +189,12 @@ export function CaseStudyView({
                   {section.body}
                 </p>
               </div>
-              <MediaPlaceholder
+              <MediaSlot
                 color={cs.color}
                 label={`${String(i + 1).padStart(2, "0")}`}
                 ratio="aspect-[4/3]"
+                image={section.media}
+                sizes="(min-width: 768px) 50vw, 100vw"
               />
             </div>
           ))}

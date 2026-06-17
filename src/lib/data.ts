@@ -70,6 +70,12 @@ export const stack: TrackGroup[] = [
 
 /* ── Case studies ─────────────────────────────────────────── */
 
+export type CaseMedia = {
+  src: string;
+  alt: string;
+  position?: string;
+};
+
 export type CaseStudy = {
   slug: string;
   title: string;
@@ -82,8 +88,9 @@ export type CaseStudy = {
   stack: string[];
   color: string;
   liveUrl?: string;
+  heroMedia?: CaseMedia;
   highlights: { value: string; label: string }[];
-  sections: { kicker: string; title: string; body: string }[];
+  sections: { kicker: string; title: string; body: string; media?: CaseMedia }[];
   specs: { label: string; value: string }[];
 };
 
@@ -93,13 +100,14 @@ export const caseStudies: CaseStudy[] = [
     title: "Martin Community College",
     client: "Martin Community College",
     year: "2024",
-    eyebrow: "Headless CMS · EdTech",
+    eyebrow: "Headless CMS · Higher Ed Tech",
     headline: "One platform. Every pathway.",
     subhead:
-      "A headless CMS and career-pathways platform that replaced a stack of single-purpose third-party tools with one integrated system — courses, programs, job metrics, registrations, and lead generation in a single build.",
+      "A headless CMS and college catalog platform that replaced a stack of single-purpose third-party tools with one integrated system — courses, programs, job metrics, registrations, and lead generation in a single build.",
     role: "Full-Stack Engineer · end-to-end owner",
     stack: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "REST API"],
     color: "var(--clip-blue)",
+    liveUrl: "https://martincc.edu/",
     highlights: [
       { value: "5+", label: "Third-party tools replaced by one platform" },
       { value: "1:1", label: "Direct collaboration with college stakeholders" },
