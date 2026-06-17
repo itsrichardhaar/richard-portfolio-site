@@ -101,7 +101,7 @@ export function Cursor() {
       <div
         ref={ringRef}
         aria-hidden
-        className="pointer-events-none fixed left-0 top-0 z-[100] h-8 w-8 rounded-full border border-foreground mix-blend-difference"
+        className="cursor-ring pointer-events-none fixed left-0 top-0 z-[100] h-8 w-8 rounded-full border border-foreground"
         style={{ willChange: "transform" }}
       />
       <div

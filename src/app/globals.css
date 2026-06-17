@@ -185,6 +185,14 @@ html.lenis body {
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { scrollbar-width: none; }
 
+/* Cursor ring — invert against light bg, render as solid off-white in dark */
+.cursor-ring {
+  mix-blend-mode: difference;
+}
+.dark .cursor-ring {
+  mix-blend-mode: normal;
+}
+
 /* Terminal caret blink */
 @keyframes caret-blink {
   50% { opacity: 0; }
