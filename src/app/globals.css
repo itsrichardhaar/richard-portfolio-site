@@ -144,30 +144,20 @@ html.lenis body {
 }
 
 .btn-primary {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  background: var(--foreground);
+  background-color: var(--foreground);
+  background-image: linear-gradient(to right, var(--accent), var(--accent));
+  background-size: 0% 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
   color: var(--background);
   transition:
+    background-size 450ms cubic-bezier(0.65, 0, 0.35, 1),
     color 320ms cubic-bezier(0.65, 0, 0.35, 1),
     transform 160ms ease;
 }
-.btn-primary::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: var(--accent);
-  transform: scaleX(0);
-  transform-origin: left center;
-  transition: transform 450ms cubic-bezier(0.65, 0, 0.35, 1);
-}
 .btn-primary:hover {
+  background-size: 100% 100%;
   color: #fff;
-}
-.btn-primary:hover::before {
-  transform: scaleX(1);
 }
 
 .btn-ghost {
