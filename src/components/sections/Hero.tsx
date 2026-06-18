@@ -57,7 +57,29 @@ export function Hero() {
           </a>
         </div>
 
-        <div className="hero-fade mt-20 flex justify-center">
+        <div className="hero-fade mt-6 flex items-center justify-center gap-6 font-mono text-[11px] uppercase tracking-[0.2em]">
+          <a
+            href={site.social.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover-underline"
+          >
+            GitHub
+          </a>
+          <span className="text-muted/60">/</span>
+          <a
+            href={site.social.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover-underline"
+          >
+            LinkedIn
+          </a>
+          <span className="text-muted/60">/</span>
+          <span className="text-muted">{site.location}</span>
+        </div>
+
+        <div className="hero-fade mt-16 flex justify-center">
           <ArrowDown size={16} className="animate-bounce text-muted" />
         </div>
       </div>
