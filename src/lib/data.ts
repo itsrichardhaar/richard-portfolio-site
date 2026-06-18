@@ -9,7 +9,7 @@ export const site = {
     linkedin: "https://www.linkedin.com/in/richard-v-haar",
   },
   tagline:
-    "I ship AI and automation systems end-to-end — from architecture through customer deployment.",
+    "I ship production applications, AI and automation systems end-to-end — from architecture through customer deployment.",
   bio: [
     "I'm a full-stack engineer who ships software and applications, as well as AI and automation solutions end-to-end — from system architecture through customer deployment.",
     "Lately that means building RAG and retrieval systems, automating manual business processes with LLM APIs, and translating ambiguous client workflows into working software. I'm comfortable as the technical point of contact: gathering requirements, onboarding and training customers, debugging integrations live, and owning outcomes.",
