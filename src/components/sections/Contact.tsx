@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { site } from "@/lib/data";
 import { SplitWords } from "../Reveal";
 import { revealOnce } from "@/lib/reveal";
-import { ArrowUpRight } from "lucide-react";
+import { Send } from "lucide-react";
 
 export function Contact() {
   const ref = useRef<HTMLElement>(null);
@@ -54,7 +54,7 @@ export function Contact() {
             className="btn btn-primary px-8 py-4 text-base"
           >
             {site.email}
-            <ArrowUpRight
+            <Send
               size={18}
               className="transition-transform duration-200 group-hover:-translate-y-0.5"
             />
