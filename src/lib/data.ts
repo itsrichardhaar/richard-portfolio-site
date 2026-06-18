@@ -11,7 +11,7 @@ export const site = {
   tagline:
     "I ship AI and automation systems end-to-end — from architecture through customer deployment.",
   bio: [
-    "I'm a full-stack engineer who ships AI and automation solutions end-to-end — from system architecture through customer deployment.",
+    "I'm a full-stack engineer who ships software and applications, as well as AI and automation solutions end-to-end — from system architecture through customer deployment.",
     "Lately that means building RAG and retrieval systems, automating manual business processes with LLM APIs, and translating ambiguous client workflows into working software. I'm comfortable as the technical point of contact: gathering requirements, onboarding and training customers, debugging integrations live, and owning outcomes.",
     "I lead engineering on client work at Springer Studios. Off the clock I'm usually traveling, skiing, or somewhere near the coast.",
   ],
@@ -37,8 +37,7 @@ export const stack: TrackGroup[] = [
       "Vector embeddings",
       "Semantic search",
       "Retrieval pipelines",
-      "LLM API integration",
-      "Workflow automation",
+      "LLM API integration"
     ],
   },
   {
@@ -51,7 +50,7 @@ export const stack: TrackGroup[] = [
     n: "03",
     label: "Frameworks",
     color: "var(--clip-green)",
-    items: ["React", "Next.js", "Node.js", "Express", "React Native", "Tailwind CSS"],
+    items: ["React", "Next.js", "Node.js", "Express", "React Native", "LangChain"],
   },
   {
     n: "04",
@@ -61,10 +60,9 @@ export const stack: TrackGroup[] = [
       "AWS",
       "Docker",
       "CI/CD",
-      "MySQL",
       "PostgreSQL",
       "MongoDB",
-      "Qdrant (Vector DB)",
+      "Databricks",
     ],
   },
   {
@@ -74,7 +72,8 @@ export const stack: TrackGroup[] = [
     items: [
       "REST/GraphQL",
       "Schema/Versioning",
-      "Authentication/Authorization",
+      "OAuth",
+      "Webhooks"
     ],
   },
 ];
