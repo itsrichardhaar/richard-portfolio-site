@@ -33,7 +33,7 @@ export const stack: TrackGroup[] = [
     color: "var(--clip-cyan)",
     items: [
       "RAG architectures",
-      "multi‑step orchestration",
+      "Multi‑step orchestration",
       "Vector embeddings",
       "Semantic search",
       "Retrieval pipelines",
