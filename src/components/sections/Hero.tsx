@@ -1,11 +1,10 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Link from "next/link";
 import { gsap } from "gsap";
 import { site } from "@/lib/data";
 import { SplitWords } from "../Reveal";
-import { ArrowRight, ArrowDown } from "lucide-react";
+import { ArrowRight, ArrowDown, Send } from "lucide-react";
 
 export function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -48,9 +47,14 @@ export function Hero() {
             Selected work
             <ArrowRight size={15} />
           </a>
-          <Link href="/log" className="btn btn-ghost" data-cursor="Log">
-            Project log
-          </Link>
+          <a
+            href={`mailto:${site.email}`}
+            className="btn btn-ghost"
+            data-cursor="Say hi"
+          >
+            {site.email}
+            <Send size={15} />
+          </a>
         </div>
 
         <div className="hero-fade mt-20 flex justify-center">
