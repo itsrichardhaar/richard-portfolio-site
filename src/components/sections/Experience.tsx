@@ -63,7 +63,7 @@ export function Experience() {
             {experience.map((job) => (
               <div key={job.company} className="job relative">
                 <span
-                  className="absolute -left-[1.51rem] top-1.5 h-2.5 w-2.5 rounded-[2px] bg-accent md:-left-[2.14rem]"
+                  className="absolute -left-[1.51rem] top-1.5 h-2.5 w-2.5 rounded-[2px] bg-accent md:-left-[2.28rem]"
                   aria-hidden
                 />
                 <div className="grid gap-3 md:grid-cols-12 md:gap-8">
