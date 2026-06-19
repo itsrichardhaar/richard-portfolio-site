@@ -39,7 +39,7 @@ export function Contact() {
         </p>
 
         <h2 className="mt-8 text-[clamp(2.25rem,6vw,4.5rem)] font-semibold leading-[1.05] tracking-[-0.03em]">
-          <SplitWords text="Let's build something that integrates & automates." stagger={0.04} />
+          <SplitWords text="Engineering intelligent systems end-to-end." stagger={0.04} />
         </h2>
 
         <p className="contact-fade mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted md:text-lg">
